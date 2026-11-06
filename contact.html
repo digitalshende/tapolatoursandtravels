@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Tapola Tours and Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+         <img src="img/tapola_final_header.png" width="270" height="75">
+            <div class="mobile-menu" onClick="toggleMenu()">☰</div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="routes.html">Routes</a></li>
+                    <li><a href="tariff.html">Tariff</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active" style="color:var(--secondary); font-weight:bold;">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+	
+	<main>
+    <h1 class="page-title">Book Now / Contact Us</h1>
+    
+    <div class="content-grid">
+        <!-- Contact Info Card -->
+        <div class="card">
+            <h2>Get in Touch</h2>
+            <p style="margin-top: 15px;"><strong>Phone:</strong> <br>
+                <a href="tel:9423315604" style="color: var(--secondary); font-weight: bold; font-size: 1.2rem;">9423315604</a> / 
+                <a href="tel:7021577896" style="color: var(--secondary); font-weight: bold; font-size: 1.2rem;">7021577896</a>
+            </p>
+            <p style="margin-top: 10px;"><strong>Availability:</strong> 24/7 Service</p>
+            <p style="margin-top: 10px;"><strong>Service Areas:</strong> Pune, Mumbai, Mahabaleshwar, Tapola, Panchgani.</p>
+            <p style="margin-top: 10px;"><strong>Email:</strong> info@tapolatours.com</p>
+            
+            <div style="margin-top: 2rem; padding: 1rem; background: #eef9fb; border-left: 4px solid var(--secondary); border-radius: 4px;">
+                <p style="font-size: 0.95rem; margin: 0;"><strong>Note:</strong> Fill out the form to instantly send your booking details to our WhatsApp. Our team will confirm your ride immediately!</p>
+            </div>
+        </div>
+        
+        <!-- Booking Form Card -->
+        <form class="booking-form" id="whatsappForm" onSubmit="sendToWhatsApp(event)">
+            <h2>Booking Form</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;">Enter your details below to book via WhatsApp.</p>
+            
+            <input type="text" id="bName" placeholder="Your Name" required>
+            <input type="tel" id="bPhone" placeholder="Phone Number" required>
+            <input type="text" id="bPickup" placeholder="Pickup Location" required>
+            <input type="text" id="bDrop" placeholder="Drop Location" required>
+            <input type="date" id="bDate" required>
+            
+            <select id="bVehicle" required>
+                <option value="">Select Vehicle</option>
+                <option value="Toyota Innova Crysta">Toyota Innova Crysta</option>
+                <option value="Sedan (Dzire/Etios)">Sedan (Dzire/Etios)</option>
+                <option value="Tempo Traveller">Tempo Traveller</option>
+            </select>
+            
+            <!-- Button with WhatsApp Icon -->
+            <button type="submit" class="btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #25D366; color: white;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Confirm Booking on WhatsApp
+            </button>
+        </form>
+    </div>
+</main>
+    </main>
+
+   <footer>
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <h2 class="footer-logo">Tapola <span>Tours & Travels</span></h2>
+            <p>Your trusted travel partner for exploring the beautiful hill stations of Maharashtra. Safe, reliable, and affordable cab services.</p>
+            <div class="social-links">
+                <!-- FB, Insta, WhatsApp icons -->
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="fleet.html">Our Fleet</a></li>
+                <li><a href="tariff.html">Tariff</a></li>
+                <li><a href="contact.html">Book Now</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="services.html">Outstation Cabs</a></li>
+                <li><a href="services.html">Airport Transfers</a></li>
+                <li><a href="services.html">Local Sightseeing</a></li>
+                <li><a href="services.html">Corporate Travel</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li>📞 <a href="tel:9423315604">+91 9423315604</a></li>
+                <li>📞 <a href="tel:7021577896">+91 7021577896</a></li>
+                 <li>🕒 Available 24/7</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Tapola Tours and Travels. All Rights Reserved.</p>
+		<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank">Satish Shende</a></strong></p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

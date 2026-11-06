@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Tapola Tours and Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+         <img src="img/tapola_final_header.png" width="270" height="75">
+            <div class="mobile-menu" onClick="toggleMenu()">☰</div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="routes.html">Routes</a></li>
+                    <li><a href="tariff.html">Tariff</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html" style="color:var(--secondary); font-weight:bold;">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+	<main>
+    <h1 class="page-title">Frequently Asked Questions</h1>
+    <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #555;">
+        Have a question about your upcoming trip? We have answers. If you don't find what you are looking for here, please feel free to call us anytime at <strong>9423315604</strong>.
+    </p>
+
+    <style>
+        /* Custom styling for the FAQ Accordion */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        details {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        summary {
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            list-style: none; /* Hides the default arrow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Hides arrow in Chrome/Safari */
+        }
+        summary:hover {
+            background: #f9f9f9;
+        }
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+        details[open] summary::after {
+            content: '-';
+        }
+        .faq-answer {
+            padding: 0 1.2rem 1.2rem 1.2rem;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+    </style>
+
+    <div class="faq-container">
+        
+        <!-- Q1 -->
+        <details>
+            <summary>Do you provide one-way drops?</summary>
+            <div class="faq-answer">
+                <p>Yes, absolutely! We understand that not everyone needs a round-trip. We provide both <strong>one-way drops</strong> and <strong>round-trip services</strong> connecting Pune and Mumbai to Mahabaleshwar, Tapola, Panchgani, and other destinations.</p>
+            </div>
+        </details>
+
+        <!-- Q2 -->
+        <details>
+            <summary>Are tolls and parking included in the fare?</summary>
+            <div class="faq-answer">
+                <p>Yes, our pricing is completely transparent. Our standard quotes usually include tolls, state taxes, and driver allowance. However, specific inclusions may vary based on the package you choose. We will confirm exactly what is included in your final quote before you book.</p>
+            </div>
+        </details>
+
+        <!-- Q3 -->
+        <details>
+            <summary>How can I book a cab with Tapola Tours?</summary>
+            <div class="faq-answer">
+                <p>Booking with us is quick and easy. You can:</p>
+                <ul style="margin-top: 5px; padding-left: 20px;">
+                    <li>Call or WhatsApp us directly at <strong>9423315604 / 7021577896</strong>.</li>
+                    <li>Fill out the booking form on our <a href="contact.html" style="color: var(--secondary); font-weight: bold;">Contact Page</a>.</li>
+                </ul>
+                <p>Our team is available 24/7 to assist you.</p>
+            </div>
+        </details>
+
+        <!-- Q4 -->
+        <details>
+            <summary>What types of vehicles are available for outstation trips?</summary>
+            <div class="faq-answer">
+                <p>We have a well-maintained fleet to suit every group size and budget. Choose from budget-friendly <strong>Sedans (Swift Dzire)</strong>, spacious and premium <strong>Toyota Innova Crystas</strong> (perfect for families), or large <strong>Tempo Travellers</strong> for corporate events and big groups.</p>
+            </div>
+        </details>
+
+        <!-- Q5 -->
+        <details>
+            <summary>Are there any extra charges for night driving?</summary>
+            <div class="faq-answer">
+                <p>For pickups or drops between 10:00 PM and 6:00 AM, a nominal night charge may apply as per standard industry practice. Rest assured, this will always be communicated to you upfront during the booking process—there are no surprise fees.</p>
+            </div>
+        </details>
+
+        <!-- Q6 -->
+        <details>
+            <summary>What is your cancellation policy?</summary>
+            <div class="faq-answer">
+                <p>We understand that plans can change. Cancellations made at least 24 hours prior to the scheduled pickup time are usually free of charge. Cancellations made at the last minute may attract a nominal fee. Please discuss specific cancellation terms with our team when booking.</p>
+            </div>
+        </details>
+
+        <!-- Q7 -->
+        <details>
+            <summary>How much luggage can we bring?</summary>
+            <div class="faq-answer">
+                <p>Our vehicles are equipped to handle standard luggage. An Innova Crysta can comfortably fit 3-4 large suitcases, while a Sedan can fit 2. If you are traveling with oversized luggage, sports equipment, or wheelchairs, please let us know in advance so we can arrange an appropriate vehicle (like a Tempo Traveller).</p>
+            </div>
+        </details>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+        <h3>Still have a question?</h3>
+        <p>We are just a phone call away. Available 24/7 for your travel needs.</p>
+        <br>
+        <a href="tel:9423315604" class="btn">📞 Call Us Now</a>
+    </div>
+</main>
+    </main>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <h2 class="footer-logo">Tapola <span>Tours & Travels</span></h2>
+            <p>Your trusted travel partner for exploring the beautiful hill stations of Maharashtra. Safe, reliable, and affordable cab services.</p>
+            <div class="social-links">
+                <!-- FB, Insta, WhatsApp icons -->
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="fleet.html">Our Fleet</a></li>
+                <li><a href="tariff.html">Tariff</a></li>
+                <li><a href="contact.html">Book Now</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="services.html">Outstation Cabs</a></li>
+                <li><a href="services.html">Airport Transfers</a></li>
+                <li><a href="services.html">Local Sightseeing</a></li>
+                <li><a href="services.html">Corporate Travel</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li>📞 <a href="tel:9423315604">+91 9423315604</a></li>
+                <li>📞 <a href="tel:7021577896">+91 7021577896</a></li>
+                 <li>🕒 Available 24/7</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Tapola Tours and Travels. All Rights Reserved.</p>
+		<p style="font-size: 0.85rem; margin-top: 8px; opacity: 0.8; letter-spacing: 1px;">
+    Designed & Developed by <strong><a href="https://sites.google.com/view/satish-shende/" target="_blank">Satish Shende</a></strong></p>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
